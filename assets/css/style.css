@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#contact-me {
+    position: relative;
+}
+
+.cotact-list {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
