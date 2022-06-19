@@ -1,3 +1,8 @@
+:root {
+    --nav-color: #253f72;
+}
+
+
 /* base setting */
 * {
     margin: 0;
@@ -22,18 +27,22 @@ body {
     font-weight: 400;
     line-height: 1.4;
     color: #f0f0f0;
+    background: linear-gradient(rgb(134, 165, 209),rgb(131, 154, 174))
     
 }
 
 header {
     width: 100%;
-    height: 300px;
-    background: linear-gradient(red, yellow);
+    height: auto;
+    display: flex;
+    background: linear-gradient(red, rgb(177, 29, 29));
+    justify-content: center;
+    margin-top: 40px;    
 }
 
 section {
     display: block;
-    margin: 20px;
+    margin: 3% 3% 5% 3%;
     justify-content: center;
 }
 
@@ -77,7 +86,8 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #253f72;
+    background-color: var(--nav-color);
+    text-decoration: underline;
 }
 
 .nav ul li {
@@ -91,20 +101,117 @@ ul {
     margin-right: 2rem;
 }
 
-.cotact-list {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-}
+
 
 .about {
     display: block;
     width: 100%;
     height: 600%;
 }
+
+.left{
+    float: left;
+    padding-right: 3%;
+    margin: 3%;
+    border-right: 5px solid black;
+}
+
+.right {
+    float: right;
+}
+
+.projects-grid img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.welcome div h1{
+    display: block;
+}
+
+.welcome div p {
+    display: block;
+}
+
+figure {
+    display: inline-block;
+    right: 15px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.skills-container {
+    margin: 2rem 0 8rem 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 40px);
+    grid-template-rows: repeat(auto-fit, 40px);
+    gap: 2.5rem;
+}
+
+.skill {
+    display: inline;
+}
+
+.skill i {
+    font-size: 5rem;
+}
+
+/* .contact {
+    display: inline;
+    position: fixed;
+    width: 100%;
+    height: 300px;
+} */
+
+.contact h1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-list {
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: 1;
+    gap: 4rem;
+}
+
+.contact-content i {
+    font-size: 3rem;
+}
+
+
 /* Id selector */
 
-#contact-me {
+#contact {
     position: relative;
 }
 
+#about {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+#first-projects {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+#first-about {
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 487px) {
+    header {
+        height: auto;
+    }
+}
