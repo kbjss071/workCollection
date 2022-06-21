@@ -1,5 +1,10 @@
 # workCollection
 
+## Link to the deployed application
+- https://kbjss071.github.io/workCollection/
+
+![Alt text](/assets/images/screenshot.PNG)
+
 ## To-Do Lists
 - Display the developer's name, photo or avatar, links to sections about them, their work, and how to contact them.
 - When links of navigation are clicked, the UI scrolls to the corresponding section.
