@@ -101,8 +101,6 @@ ul {
     margin-right: 2rem;
 }
 
-
-
 .about {
     display: block;
     width: 100%;
@@ -110,24 +108,14 @@ ul {
 }
 
 .left{
-    float: left;
     padding-right: 3%;
     margin: 3%;
     border-right: 5px solid black;
+    display: inline-block;
 }
 
-.right {
-    float: right;
-}
-
-.projects-grid img {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+.picture-right {
+    right: 0;
 }
 
 .welcome div h1{
@@ -138,11 +126,14 @@ ul {
     display: block;
 }
 
-figure {
+div > figure {
     display: inline-block;
-    right: 15px;
     margin: 0 auto;
-    width: 50%;
+    justify-content: center;
+}
+
+div > figure > img {
+    justify-content: center;
 }
 
 .skills-container {
@@ -169,7 +160,13 @@ figure {
     height: 300px;
 } */
 
-.contact h1 {
+.contact {
+    position: relative;
+    object-fit: cover;
+    vertical-align: text-top;
+}
+
+.contact div h2 {
     display: flex;
     justify-content: flex-start;
 }
@@ -186,6 +183,37 @@ figure {
     font-size: 3rem;
 }
 
+.display {
+    display: inline;
+}
+
+
+.application {
+    min-width: 5vw;
+    width: auto;
+    min-height: 1vh;
+    height: auto;
+    background-color:aliceblue;
+    margin: 2% auto;
+    padding: 3% var(--nav-color);
+    object-fit: cover;
+}
+
+.app-title {
+    position: relative;
+    width: 20%;
+    height: 5vh;
+    left: 0;
+    bottom: 0;
+    background-color: #253f72;
+}
+
+.block {
+    display: block;
+    min-block-size: ;
+    position: absolute;
+
+}
 
 /* Id selector */
 
@@ -210,8 +238,16 @@ figure {
     margin-bottom: 2%;
 }
 
+#first-application {
+    width: 66%;
+    height: 20vh;
+}
+
+#LinkedInImage {
+    justify-content: center;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 487px) {
-    header {
-        height: auto;
-    }
+
 }
